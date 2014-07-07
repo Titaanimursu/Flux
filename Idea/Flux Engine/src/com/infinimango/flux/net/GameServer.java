@@ -1,9 +1,14 @@
- package com.infinimango.flux;
+package com.infinimango.flux.net;
 
+
+import com.infinimango.flux.Display;
 
 import java.io.IOException;
-import java.lang.String;import java.lang.Thread;import java.net.*;
-import java.net.DatagramPacket;import java.net.DatagramSocket;import java.net.InetAddress;import java.net.SocketException;import java.util.ArrayList;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+import java.util.ArrayList;
 import java.util.List;
 
  public abstract class GameServer extends Thread {

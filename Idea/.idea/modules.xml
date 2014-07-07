@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Flux Engine/Flux Engine.iml" filepath="$PROJECT_DIR$/Flux Engine/Flux Engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Flux Test/Flux Test.iml" filepath="$PROJECT_DIR$/Flux Test/Flux Test.iml" />
     </modules>
   </component>
 </project>

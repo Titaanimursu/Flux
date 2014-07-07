@@ -1,4 +1,7 @@
-package com.infinimango.flux;
+package com.infinimango.flux.net;
+
+import com.infinimango.flux.Debug;
+import com.infinimango.flux.Display;
 
 import java.io.IOException;
 import java.net.*;
