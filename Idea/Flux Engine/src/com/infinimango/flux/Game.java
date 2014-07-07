@@ -2,7 +2,7 @@ package com.infinimango.flux;
 
 import java.awt.*;
 
-public abstract class Game implements Runnable {
+public abstract class Game {
 	private static State state;
 
 	private static long time;
@@ -20,10 +20,10 @@ public abstract class Game implements Runnable {
 	}
 
 	public void update() {
-		state.update();
+		if (state != null) state.update();
 	}
 
 	public void render(Graphics g) {
-		state.render(g);
+		if (state != null) state.render(g);
 	}
 }
