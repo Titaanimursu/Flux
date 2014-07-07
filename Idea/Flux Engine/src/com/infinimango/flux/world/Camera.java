@@ -1,7 +1,8 @@
 package com.infinimango.flux.world;
 
-import com.infinimango.flux.world.entity.Entity;
+import com.infinimango.flux.Display;
 import com.infinimango.flux.Game;
+import com.infinimango.flux.world.entity.Entity;
 
 import java.util.Random;
 
@@ -45,26 +46,26 @@ public class Camera {
 			float ex = followedEntity.getX() + followOffsetX;
 			float ey = followedEntity.getY() + followOffsetY;
 
-			float changeX = (ex - Game.width / 2 + followedEntity.getWidth() / 2 - x) / smoothing;
-			float changeY = (ey - Game.height / 2 + followedEntity.getHeight() / 2 - y) / smoothing;
+			float changeX = (ex - Display.getWidth() / 2 + followedEntity.getWidth() / 2 - x) / smoothing;
+			float changeY = (ey - Display.getHeight() / 2 + followedEntity.getHeight() / 2 - y) / smoothing;
 
 			if(Math.abs(changeX) > (1.0f / smoothing)){
 				x += changeX;
 			}else{
-				x = Math.round(ex - Game.width / 2 + followedEntity.getWidth() / 2);
+				x = Math.round(ex - Display.getWidth() / 2 + followedEntity.getWidth() / 2);
 			}
 
 			if(Math.abs(changeY) > (1.0f / smoothing)){
 				y += changeY;
 			}else {
-				y = Math.round(ey - Game.height / 2 + followedEntity.getHeight() / 2);
+				y = Math.round(ey - Display.getHeight() / 2 + followedEntity.getHeight() / 2);
 			}
 		}
 
 		if(borderUp && y < up) y = up;
-		if(borderDown && y + Game.height > down) y = down - Game.height;
+		if (borderDown && y + Display.getHeight() > down) y = down - Display.getHeight();
 		if(borderLeft && x < left) x = left;
-		if(borderRight && x + Game.width > right) x = right - Game.width;
+		if (borderRight && x + Display.getWidth() > right) x = right - Display.getWidth();
 
 		if(shaking){
 			if(Game.getTime() - shakeDelayer > SHAKE_DELAY) {

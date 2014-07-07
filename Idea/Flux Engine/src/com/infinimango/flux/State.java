@@ -4,8 +4,11 @@ import java.awt.*;
 
 public abstract class State {
 
+	//HELLO JELLO
+
 	public State(){}
 
-	public abstract void update(Display d);
-	public abstract void render(Display d, Graphics g);
+	public abstract void update();
+
+	public abstract void render(Graphics g);
 }

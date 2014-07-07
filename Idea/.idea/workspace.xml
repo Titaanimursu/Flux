@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f35eb3a1-88f9-42e5-ab3b-59b1a3cdf2c8" name="Default" comment="" />
+    <list default="true" id="f35eb3a1-88f9-42e5-ab3b-59b1a3cdf2c8" name="Default" comment="Removed unused classes and fixed errors">
+      <change type="MOVED" beforePath="C:\Users\Miko\Projects\Idea\Flux Engine\src\com\infinimango\flux\Game2.java" afterPath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/Camera.java" afterPath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/Camera.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java" afterPath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/entity/Entity.java" afterPath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/entity/Entity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/State.java" afterPath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/State.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Idea.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,54 +49,64 @@
       <file leaf-file-name="Display.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="4403">
-              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="861" max-vertical-offset="4420">
+              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1272#1273#0" expanded="true" />
-                <element signature="e#1297#1298#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1360#1361#0" expanded="true" />
-                <element signature="e#1686#1687#0" expanded="true" />
-                <element signature="e#1715#1716#0" expanded="true" />
-                <element signature="e#4703#4704#0" expanded="true" />
-                <element signature="e#4722#4723#0" expanded="true" />
-                <element signature="e#4753#4754#0" expanded="true" />
-                <element signature="e#4780#4781#0" expanded="true" />
-                <element signature="e#4806#4807#0" expanded="true" />
-                <element signature="e#4837#4838#0" expanded="true" />
-                <element signature="e#4869#4870#0" expanded="true" />
-                <element signature="e#4897#4898#0" expanded="true" />
-                <element signature="e#4923#4924#0" expanded="true" />
-                <element signature="e#4942#4943#0" expanded="true" />
-                <element signature="e#4979#4980#0" expanded="true" />
-                <element signature="e#5010#5011#0" expanded="true" />
-                <element signature="e#5061#5062#0" expanded="true" />
-                <element signature="e#5092#5093#0" expanded="true" />
-                <element signature="e#5339#5340#0" expanded="true" />
-                <element signature="e#5360#5361#0" expanded="true" />
+                <element signature="e#1225#1226#0" expanded="true" />
+                <element signature="e#1260#1261#0" expanded="true" />
+                <element signature="e#1325#1326#0" expanded="true" />
+                <element signature="e#1363#1364#0" expanded="true" />
+                <element signature="e#1388#1389#0" expanded="true" />
+                <element signature="e#1714#1715#0" expanded="true" />
+                <element signature="e#1743#1744#0" expanded="true" />
+                <element signature="e#4733#4734#0" expanded="true" />
+                <element signature="e#4752#4753#0" expanded="true" />
+                <element signature="e#4791#4792#0" expanded="true" />
+                <element signature="e#4818#4819#0" expanded="true" />
+                <element signature="e#4852#4853#0" expanded="true" />
+                <element signature="e#4872#4873#0" expanded="true" />
+                <element signature="e#4912#4913#0" expanded="true" />
+                <element signature="e#4940#4941#0" expanded="true" />
+                <element signature="e#4973#4974#0" expanded="true" />
+                <element signature="e#4992#4993#0" expanded="true" />
+                <element signature="e#5029#5030#0" expanded="true" />
+                <element signature="e#5060#5061#0" expanded="true" />
+                <element signature="e#5111#5112#0" expanded="true" />
+                <element signature="e#5142#5143#0" expanded="true" />
+                <element signature="e#5389#5390#0" expanded="true" />
+                <element signature="e#5410#5411#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game2.java">
+      <file leaf-file-name="Camera.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/Camera.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3808">
+              <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="595">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#184#185#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,7 +115,7 @@
       <file leaf-file-name="GameServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/GameServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+            <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1530">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -110,31 +128,30 @@
       <file leaf-file-name="State.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="340">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game.java">
+      <file leaf-file-name="Entity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/entity/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3145" max-vertical-offset="3757">
-              <caret line="30" column="44" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.5515464" vertical-offset="993" max-vertical-offset="2142">
+              <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
               <folding>
-                <element signature="e#5096#5097#0" expanded="true" />
-                <element signature="e#5128#5129#0" expanded="true" />
+                <element signature="e#1725#1726#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameClient.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/GameClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3312" vertical-offset="343" max-vertical-offset="1377">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,14 +186,16 @@
         <option value="$PROJECT_DIR$/Flux Engine/src/src/com/infinimango/scr/world/Camera.java" />
         <option value="$PROJECT_DIR$/Flux Engine/src/src/com/infinimango/flux/world/Camera.java" />
         <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/GameDisplay.java" />
-        <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game.java" />
         <option value="$USER_HOME$/IdeaProjects/Flux engine/src/com/infinimango/flux/state/State.java" />
-        <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/State.java" />
         <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game2.java" />
-        <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java" />
         <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/GameServer.java" />
         <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Debug.java" />
         <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/GameClient.java" />
+        <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/State.java" />
+        <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/Camera.java" />
+        <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game.java" />
+        <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java" />
+        <option value="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/entity/Entity.java" />
       </list>
     </option>
   </component>
@@ -285,6 +304,28 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="world" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flux Engine" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flux" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="input" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -324,7 +365,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="Errors" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -505,7 +546,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32771823" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -535,6 +576,10 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Removed unused classes and fixed errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unused classes and fixed errors" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -568,74 +613,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/State.java">
+    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Debug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game2.java">
+    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/GameClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java">
+    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="4403">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
-            <element signature="e#1686#1687#0" expanded="true" />
-            <element signature="e#1715#1716#0" expanded="true" />
-            <element signature="e#4703#4704#0" expanded="true" />
-            <element signature="e#4722#4723#0" expanded="true" />
-            <element signature="e#4753#4754#0" expanded="true" />
-            <element signature="e#4780#4781#0" expanded="true" />
-            <element signature="e#4806#4807#0" expanded="true" />
-            <element signature="e#4837#4838#0" expanded="true" />
-            <element signature="e#4869#4870#0" expanded="true" />
-            <element signature="e#4897#4898#0" expanded="true" />
-            <element signature="e#4923#4924#0" expanded="true" />
-            <element signature="e#4942#4943#0" expanded="true" />
-            <element signature="e#4979#4980#0" expanded="true" />
-            <element signature="e#5010#5011#0" expanded="true" />
-            <element signature="e#5061#5062#0" expanded="true" />
-            <element signature="e#5092#5093#0" expanded="true" />
-            <element signature="e#5339#5340#0" expanded="true" />
-            <element signature="e#5360#5361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="3757">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="44" />
-          <folding>
-            <element signature="e#5096#5097#0" expanded="true" />
-            <element signature="e#5128#5129#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="340">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -650,20 +650,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Debug.java">
+    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3808">
+          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/GameClient.java">
+    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3312" vertical-offset="343" max-vertical-offset="1377">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="595">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="861" max-vertical-offset="4420">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
+            <element signature="e#4733#4734#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4818#4819#0" expanded="true" />
+            <element signature="e#4852#4853#0" expanded="true" />
+            <element signature="e#4872#4873#0" expanded="true" />
+            <element signature="e#4912#4913#0" expanded="true" />
+            <element signature="e#4940#4941#0" expanded="true" />
+            <element signature="e#4973#4974#0" expanded="true" />
+            <element signature="e#4992#4993#0" expanded="true" />
+            <element signature="e#5029#5030#0" expanded="true" />
+            <element signature="e#5060#5061#0" expanded="true" />
+            <element signature="e#5111#5112#0" expanded="true" />
+            <element signature="e#5142#5143#0" expanded="true" />
+            <element signature="e#5389#5390#0" expanded="true" />
+            <element signature="e#5410#5411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/entity/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5515464" vertical-offset="993" max-vertical-offset="2142">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+          <folding>
+            <element signature="e#1725#1726#0" expanded="true" />
           </folding>
         </state>
       </provider>

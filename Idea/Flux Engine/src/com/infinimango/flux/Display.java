@@ -18,13 +18,13 @@ public class Display implements Runnable {
 
 	private static JFrame frame;
 	private static Canvas canvas;
-	private Game2 game;
+	private Game game;
 
 	private BufferedImage scaleBuffer;
 
-	private int width;
-	private int height;
-	private int scale;
+	private static int width;
+	private static int height;
+	private static int scale;
 	private boolean fullscreen;
 
 	private String title;
@@ -38,7 +38,7 @@ public class Display implements Runnable {
 
 	private boolean showFPS;
 
-	public Display(Game2 game) {
+	public Display(Game game) {
 		this.game = game;
 		if(!MOTDShown) {
 			MOTDShown = true;
@@ -47,8 +47,8 @@ public class Display implements Runnable {
 	}
 
 	public void setSize(int width, int height){
-		this.width = width;
-		this.height = height;
+		Display.width = width;
+		Display.height = height;
 	}
 
 	public void setFullscreen(boolean fullscreen){
@@ -56,7 +56,7 @@ public class Display implements Runnable {
 	}
 
 	public void setScaling(int scale){
-		this.scale = scale;
+		Display.scale = scale;
 	}
 
 	public void setTitle(String title){
@@ -153,7 +153,7 @@ public class Display implements Runnable {
 			last = now;
 
 			if (!limitUPS || deltaUPS >= 1) {
-				game.update(this);
+				game.update();
 				updates++;
 				deltaUPS--;
 			}
@@ -176,6 +176,7 @@ public class Display implements Runnable {
 				frames = 0;
 			}
 		}
+		stop();
 	}
 
 	protected void render() {
@@ -197,7 +198,7 @@ public class Display implements Runnable {
 				g.setColor(Color.BLACK);
 				g.fillRect(0, 0, width, height);
 
-				game.render(this, g);
+				game.render(g);
 			}
 
 			rawGraphics.drawImage(scaleBuffer, 0, 0, width * scale, height * scale, null);
@@ -208,29 +209,29 @@ public class Display implements Runnable {
 			g.setColor(Color.black);
 			g.fillRect(0, 0, width, height);
 
-			game.render(this, g);
+			game.render(g);
 
 			bufferStrategy.show();
 		}
 	}
 
-	public int getWidth(){
+	public static int getWidth() {
 		return width;
 	}
 
-	public int getScaledWidth(){
+	public static int getScaledWidth() {
 		return width * scale;
 	}
 
-	public int getHeight(){
-		return canvas.getWidth();
+	public static int getHeight() {
+		return height;
 	}
 
-	public int getScaledHeight(){
+	public static int getScaledHeight() {
 		return height * scale;
 	}
 
-	public int getScale() {
+	public static int getScale() {
 		return scale;
 	}
 

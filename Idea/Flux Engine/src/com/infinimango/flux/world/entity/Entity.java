@@ -1,6 +1,6 @@
 package com.infinimango.flux.world.entity;
 
-import com.infinimango.flux.Game;
+import com.infinimango.flux.Display;
 import com.infinimango.flux.world.Camera;
 
 import java.awt.*;
@@ -82,7 +82,7 @@ public class Entity {
 	 * @return Entity height
 	 */
 	public int getHeight(){
-		return width;
+		return height;
 	}
 
 	/**
@@ -107,9 +107,9 @@ public class Entity {
 	 */
 	public boolean isOnScreen() {
 		boolean left = x + width > Camera.getX();
-		boolean right = x < Camera.getX() + Game.width;
+		boolean right = x < Camera.getX() + Display.getWidth();
 		boolean up = y + height > Camera.getY();
-		boolean down = y < Camera.getY() + Game.height;
+		boolean down = y < Camera.getY() + Display.getHeight();
 
 		return (left && right && up && down);
 	}
