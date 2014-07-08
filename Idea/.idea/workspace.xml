@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f35eb3a1-88f9-42e5-ab3b-59b1a3cdf2c8" name="Default" comment="Remade level handling">
-      <change type="NEW" beforePath="" afterPath="C:\Users\Miko\Projects\Idea\Fullscreen Test\Fullscreen Test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/Level.java" />
-      <change type="NEW" beforePath="" afterPath="C:\Users\Miko\Projects\Idea\Fullscreen Test\src\Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flux Test/src/TestState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flux Test/lib/flux.jar" afterPath="$PROJECT_DIR$/Flux Test/lib/flux.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java" afterPath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flux Test/src/Game.java" afterPath="$PROJECT_DIR$/Flux Test/src/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/World.java" afterPath="$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/world/World.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Idea.iws" />
@@ -42,8 +34,8 @@
       <file leaf-file-name="Display.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46933332" vertical-offset="1864" max-vertical-offset="4318">
-              <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.65066665" vertical-offset="2833" max-vertical-offset="4335">
+              <caret line="195" column="15" selection-start-line="195" selection-start-column="15" selection-end-line="195" selection-end-column="15" />
               <folding>
                 <element signature="e#1354#1355#0" expanded="true" />
                 <element signature="e#1382#1383#0" expanded="true" />
@@ -765,7 +757,11 @@
       <created>1404827904295</created>
       <updated>1404827904295</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Remade level handling">
+      <created>1404855153995</created>
+      <updated>1404855153995</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1099,8 +1095,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Flux Engine/src/com/infinimango/flux/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46933332" vertical-offset="1864" max-vertical-offset="4318">
-          <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.65066665" vertical-offset="2833" max-vertical-offset="4335">
+          <caret line="195" column="15" selection-start-line="195" selection-start-column="15" selection-end-line="195" selection-end-column="15" />
           <folding>
             <element signature="e#1354#1355#0" expanded="true" />
             <element signature="e#1382#1383#0" expanded="true" />

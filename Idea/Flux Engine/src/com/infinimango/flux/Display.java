@@ -132,13 +132,13 @@ public class Display implements Runnable {
 		start();
 	}
 
-	protected synchronized void start() {
+	private synchronized void start() {
 		Debug.out("Starting thread");
 		Display.running = true;
 		new Thread(this, frame.getTitle()).start();
 	}
 
-	protected synchronized void stop() {
+	private synchronized void stop() {
 		Debug.out("Stopping thread");
 		Display.running = false;
 	}
@@ -193,6 +193,7 @@ public class Display implements Runnable {
 				frames = 0;
 			}
 		}
+		stop();
 	}
 
 	protected void render() {
