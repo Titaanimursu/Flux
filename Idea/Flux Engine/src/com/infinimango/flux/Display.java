@@ -29,10 +29,12 @@ public class Display implements Runnable {
 
 	private String title;
 
-	private int targetUPS;
-	private int targetFPS;
+	private int targetUPS = 60;
+	private int targetFPS = 60;
 	private boolean limitUPS = true;
 	private boolean limitFPS = false;
+
+	private boolean autoSleep = false;
 
 	private static boolean running;
 
@@ -67,6 +69,8 @@ public class Display implements Runnable {
 		if(targetUPS == UNLIMITED) {
 			limitUPS = false;
 			return;
+		} else {
+			limitUPS = true;
 		}
 		this.targetUPS = targetUPS;
 	}
@@ -75,8 +79,14 @@ public class Display implements Runnable {
 		if(targetFPS == UNLIMITED) {
 			limitFPS = false;
 			return;
+		} else {
+			limitFPS = true;
 		}
 		this.targetFPS = targetFPS;
+	}
+
+	public void setAutoSleep(boolean autoSleep) {
+		this.autoSleep = autoSleep;
 	}
 
 	public void showFPS(boolean showFPS){
@@ -122,13 +132,13 @@ public class Display implements Runnable {
 		start();
 	}
 
-	private synchronized void start() {
+	protected synchronized void start() {
 		Debug.out("Starting thread");
 		Display.running = true;
 		new Thread(this, frame.getTitle()).start();
 	}
 
-	private synchronized void stop() {
+	protected synchronized void stop() {
 		Debug.out("Stopping thread");
 		Display.running = false;
 	}
@@ -159,12 +169,16 @@ public class Display implements Runnable {
 				game.update();
 				updates++;
 				deltaUPS--;
+			} else {
+				if (autoSleep) sleep();
 			}
 
 			if (!limitFPS || deltaFPS >= 1) {
 				render();
 				frames++;
 				deltaFPS--;
+			} else {
+				if (autoSleep) sleep();
 			}
 
 			if (System.currentTimeMillis() - timer >= 1000) {
@@ -179,7 +193,6 @@ public class Display implements Runnable {
 				frames = 0;
 			}
 		}
-		stop();
 	}
 
 	protected void render() {
@@ -215,6 +228,14 @@ public class Display implements Runnable {
 			game.render(g);
 
 			bufferStrategy.show();
+		}
+	}
+
+	public static void sleep() {
+		try {
+			Thread.sleep(1);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
 

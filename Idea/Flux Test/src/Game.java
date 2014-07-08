@@ -5,13 +5,16 @@ public class Game extends com.infinimango.flux.Game {
 		Display display = new Display(new Game());
 		display.setSize(1366, 768);
 		display.setScaling(1);
+		display.setTargetUPS(60);
+		display.setTargetFPS(60);
+
+		display.setAutoSleep(true);
+
 		display.setFullscreen(true);
 		display.setTitle("Game test");
 		display.showFPS(true);
 		display.create();
-	}
 
-	public Game() {
-
+		Game.setState(new TestState());
 	}
 }
