@@ -42,7 +42,7 @@ public class Display implements Runnable {
 		this.game = game;
 		if(!MOTDShown) {
 			MOTDShown = true;
-			Debug.print("========== FLUX v." + FLUX_VERSION + " RUNNING ==========");
+			Debug.print("========== FLUX v." + FLUX_VERSION + "alpha" + " RUNNING ==========");
 		}
 	}
 
@@ -96,24 +96,27 @@ public class Display implements Runnable {
 		canvas.setMaximumSize(size);
 		canvas.setPreferredSize(size);
 
-		if(fullscreen){
-			frame.setUndecorated(true);
-			GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-			gd.setFullScreenWindow(frame);
-		}
-
 		canvas.addKeyListener(new Keyboard());
 		canvas.addMouseListener(new Mouse(scale));
 		canvas.addMouseMotionListener(new Mouse(scale));
 		canvas.addMouseWheelListener(new Mouse(scale));
 
+		if (fullscreen) {
+			GraphicsDevice device = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+			frame.setUndecorated(true);
+			frame.setAlwaysOnTop(true);
+			device.setFullScreenWindow(frame);
+		} else {
+			frame.setLocationRelativeTo(null);
+		}
+
 		frame.add(canvas);
 		frame.pack();
 
-		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
 
 		canvas.requestFocus();
+
 		Debug.out("Display created in " + (System.currentTimeMillis() - timer) + "ms!");
 
 		start();
