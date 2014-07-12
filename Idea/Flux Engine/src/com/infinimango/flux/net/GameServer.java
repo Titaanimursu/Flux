@@ -1,6 +1,7 @@
 package com.infinimango.flux.net;
 
 
+import com.infinimango.flux.Debug;
 import com.infinimango.flux.Display;
 
 import java.io.IOException;
@@ -19,7 +20,7 @@ import java.util.List;
 
 	List<Client> connectedClients = new ArrayList<Client>();
 
-	public class Client{
+	 protected class Client {
 		InetAddress IPAddress;
 		int port;
 
@@ -36,6 +37,7 @@ import java.util.List;
 		} catch (SocketException e) {
 			e.printStackTrace();
 		}
+		start();
 	}
 
 	public GameServer(){
@@ -55,13 +57,20 @@ import java.util.List;
 					return;
 				}
 
+				Debug.sOut("Received this: " + new String(packet.getData()), port);
+
 				parse(packet.getData());
 
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+			update();
 		}
-		update();
+		try {
+			join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public abstract void update();

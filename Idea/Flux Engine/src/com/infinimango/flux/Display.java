@@ -2,6 +2,7 @@ package com.infinimango.flux;
 
 import com.infinimango.flux.input.Keyboard;
 import com.infinimango.flux.input.Mouse;
+import com.infinimango.flux.input.WindowHandler;
 
 import javax.swing.*;
 import java.awt.*;
@@ -44,7 +45,7 @@ public class Display implements Runnable {
 		this.game = game;
 		if(!MOTDShown) {
 			MOTDShown = true;
-			Debug.print("========== FLUX v." + FLUX_VERSION + "alpha" + " RUNNING ==========");
+			Debug.print("========== FLUX v." + FLUX_VERSION + "RUNNING ==========");
 		}
 	}
 
@@ -110,6 +111,8 @@ public class Display implements Runnable {
 		canvas.addMouseListener(new Mouse(scale));
 		canvas.addMouseMotionListener(new Mouse(scale));
 		canvas.addMouseWheelListener(new Mouse(scale));
+
+		frame.addWindowListener(new WindowHandler());
 
 		if (fullscreen) {
 			GraphicsDevice device = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
@@ -238,6 +241,10 @@ public class Display implements Runnable {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static void close() {
+		running = false;
 	}
 
 	public static int getWidth() {

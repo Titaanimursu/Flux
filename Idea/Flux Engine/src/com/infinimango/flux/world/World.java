@@ -15,7 +15,7 @@ public class World {
 	public List<Entity> entities = new ArrayList<Entity>();
 	public List<Creature> creatures = new ArrayList<Creature>();
 	public List<Item> items = new ArrayList<Item>();
-	public Player player;
+	public List<Player> players = new ArrayList<Player>();
 
 	Level level;
 
@@ -30,7 +30,9 @@ public class World {
 			}
 		}
 
-		player.update(this);
+		for (Player player : players) {
+			player.update(this);
+		}
 
 		for(Creature creature : creatures){
 			creature.update(this);
@@ -42,8 +44,11 @@ public class World {
 				items.remove(i);
 				continue;
 			}
-			if(player.intersects(item)) {
-				item.pickedUpBy(player);
+			for (Player player : players) {
+				if (player == null) continue;
+				if (player.intersects(item)) {
+					item.pickedUpBy(player);
+				}
 			}
 		}
 
@@ -61,7 +66,9 @@ public class World {
 			item.render(g);
 		}
 
-		if(player != null) player.render(g);
+		for (Player player : players) {
+			if (player != null) player.render(g);
+		}
 
 		for(Creature creature : creatures){
 			if(!creature.isOnScreen()) continue;
@@ -76,7 +83,7 @@ public class World {
 
 	public void add(Entity entity){
 		if(entity instanceof Player){
-			player = (Player)entity;
+			players.add((Player) entity);
 		}else if(entity instanceof Creature){
 			creatures.add((Creature)entity);
 		}else if(entity instanceof Item){
@@ -95,11 +102,6 @@ public class World {
 	}
 
 	public String getEntityString(){
-		return "World - E:" + entities.size() + " C:" + creatures.size() + " I:" + items.size() + " P:" + (player != null);
+		return "World - E:" + entities.size() + " C:" + creatures.size() + " I:" + items.size() + " P:" + players.size();
 	}
-
-	public void setPlayer(Player player){
-		this.player = player;
-	}
-
 }

@@ -25,8 +25,6 @@ public class TestState extends State {
 
 		x += xs;
 		y += ys;
-
-		System.out.println("MEM - " + Runtime.getRuntime().totalMemory());
 	}
 
 	public void render(Graphics g) {

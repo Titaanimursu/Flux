@@ -34,6 +34,7 @@ public abstract class GameClient extends Thread {
 		} catch (SocketException e) {
 			e.printStackTrace();
 		}
+		start();
 	}
 
 	public void disconnect(){
@@ -53,7 +54,7 @@ public abstract class GameClient extends Thread {
 					return;
 				}
 
-//				Debug.cout("Received this: " + new String(packet.getData()), IPAddress.getHostAddress(), port);
+				Debug.cOut("Received this: " + new String(packet.getData()), IPAddress.getHostAddress(), port);
 				parse(data);
 			} catch (IOException e) {
 				e.printStackTrace();
